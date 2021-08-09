@@ -167,7 +167,7 @@ nav label:hover{
 }
 
 .trends_nav_item:last-child {
-  margin: 0px;
+  margin-right: 0px;
 }
 
 .trends_item_image1 {
@@ -362,7 +362,7 @@ nav label:hover{
 }
 
 .aside-logo img {
-  width: 70px;
+  width: 100%;
 }
 
 .aside-content {
@@ -684,6 +684,7 @@ nav label:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   visibility: hidden;
 }
 
@@ -779,16 +780,19 @@ nav label:hover{
 }
 
 .close_popup_form {
-  position: relative;
-  width: 35px;
-  height: 35px;
-  right: -335px;
-  top: -50px;
+  background: none;
+  border: none;
   cursor: pointer;
+
+  position: relative;
+  width: 25px;
+  height: 25px;
+  right: -345px;
+  top: -50px;
   background-image: url(../svg/form-x.svg);
 }
 
-/* адаптив под планшеты */ /* адаптив под планшеты */ /* адаптив под планшеты */
+/* адаптив под планшеты */ /* адаптив под планшеты */ /* адаптив под планшеты */ /* адаптив под планшеты */ /* адаптив под планшеты */ /* адаптив под планшеты */ /* адаптив под планшеты */
 
 @media (max-width: 1199px) {
   .nav-list {
@@ -807,6 +811,9 @@ nav label:hover{
     margin-bottom: 6px;
     background-color: #fff;
     transition: background-color 1s;
+  }
+  .menu_burger div:last-child {
+    margin-bottom: 0px;
   }
 }
 
@@ -832,9 +839,9 @@ nav label:hover{
     width: 390px;
   }
 
-  .article-logo img {
+  /* .article-logo img {
     width: 100%;
-  }
+  } */
 
   .article-content {
     margin-left: 0px;
@@ -891,26 +898,16 @@ nav label:hover{
   }
 
   .close_popup_form {
-    width: 40px;
-    height: 40px;
-    right: -330px;
+    width: 30px;
+    height: 30px;
+    right: -340px;
     top: -55px;
   }
 }
 
-
-
-
-
-
-
-
-
-
 /* адаптив под мобилки */ /* адаптив под мобилки */ /* адаптив под мобилки */
-/* ПОКА НЕ ГОТОВО  */
 
-/* @media (max-width: 640px) and (orientation: portrait) {
+@media (max-width: 640px) and (orientation: portrait) {
   .trends_nav_item {
     width: 100%;
     margin-bottom: 5px;
@@ -927,50 +924,19 @@ nav label:hover{
 @media (max-width: 640px) {
   .header {
     background-image: url("../images/banner-mobile.jpg");
-    max-width: 640px;
+  }
+
+  .menu_burger {
+    top: 30px;
+    right: 15px;
   }
 
   .inner {
-    max-width: 640px;
-    padding: 220px 15px;
+    padding: 220px 40px;
   }
 
   .logo {
-    width: 80%;
-    margin: auto;
-  } */
-
-  /* .article-logo {
-    width: 330px;
-  }
-
-  .article-logo img {
-    width: 330px;
-  }
-
-  .article-content {
-    margin-left: 0px;
-  }
-
-  .article-item {
-    margin-bottom: 40px;
-  } */
-
-  /* .article-item::after {
-    display: block;
-    content: "";
-    background-color: #f4f7f6;
     width: 100%;
-    height: 3px;
-    margin-top: 20px;
-  } */
-
-  /* .article-item:last-child::after {
-    content: none;
-  }
-
-  .article-info {
-    margin-bottom: 35px;
   }
 
   .header_title {
@@ -990,28 +956,102 @@ nav label:hover{
     font-size: 16px;
   }
 
-  .article-item {
+  .content {
+    max-width: 640px;
+    padding: 40px 15px;
+    justify-content: center;
     flex-direction: column;
-  } */
+  }
 
-  /* .our_products_container {
-    flex-wrap: wrap;
-    padding: 0px 10px;
+  .main {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .article-item {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 35px;
+  }
+
+  .article-item::after {
+    display: block;
+    content: "";
+    background-color: #f4f7f6;
+    width: 100%;
+    height: 3px;
+    margin-top: 20px;
+  }
+
+  .article-logo {
+    width: 100%;
+  }
+
+  .article-logo img {
+    width: 100%;
+  }
+
+  .article-content {
+    width: 100%;
+    margin: auto;
+  }
+
+  .article-info {
+    margin-bottom: 35px;
+  }
+
+  .aside {
+    width: 100%;
+    padding-top: 40px;
+  }
+
+  .aside-item {
+    justify-content: flex-start;
+  }
+
+  .aside-logo {
+    margin-right: 20px;
+  }
+
+  .aside-content {
+    width: 100%;
+  }
+
+  .field {
+    width: 100%;
+  }
+
+  .button {
+    width: 70px;
+  }
+
+  .send {
+    margin-bottom: 30px;
+  }
+
+  .tags {
+    margin-bottom: 35px;
+  }
+
+  .our_products {
+    max-width: 640px;
+    padding: 0px 30px;
+    margin-bottom: 40px;
+  }
+
+  .our_products_container {
+    flex-direction: column;
   }
 
   .our_products_item {
+    max-width: 300px;
+    margin: auto;
     margin-bottom: 50px;
-  } */
-
-  /* .popup_form {
-    padding-bottom: 50px;
-    top: 220px;
   }
 
   .close_popup_form {
     width: 30px;
     height: 30px;
-    right: -370px;
-    top: -60px;
-  } */
+    right: -345px;
+  }
 }
