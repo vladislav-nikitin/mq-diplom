@@ -538,7 +538,7 @@ nav label:hover{
 
 .our_products {
   max-width: 1200px;
-  padding: 0px 40px;
+  padding: 0px 15px;
   margin: 0 auto;
   margin-bottom: 90px;
 }
@@ -550,23 +550,30 @@ nav label:hover{
 }
 
 .our_products_item {
-  width: 300px;
+  max-width: 340px;
   display: flex;
   flex-direction: column;
+  padding: 0px 20px 30px;
+}
+
+.our_products_item:after {
+  content: "";
+  position: absolute;
+  top: 170px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 3px solid #b59f5b;
+  z-index: 2;
 }
 
 .our_products_image {
-  width: 300px;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .our_products_image img {
-  width: 300px;
-}
-
-.our_products_content {
-  outline: 3px solid #b59f5b;
-  outline-offset: 20px;
-  flex: 1;
+  max-width: 100%;
 }
 
 .our_products_title {
@@ -703,7 +710,7 @@ nav label:hover{
 
 .popup {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -995,6 +1002,10 @@ nav label:hover{
 
   .trends_item_title {
     font-size: 16px;
+  }
+
+  .trends_nav_item {
+    margin-right: 0px;
   }
 
   .content {
